@@ -1,25 +1,35 @@
+
 public class Main
 {
 
-public static void show(int... x)
-{
-  for(int a :x)
-    System.out.println(a);
-} 
+
   public static void main(String[] args)
 {
+    circle c = new circle(10);
+   System.out.println("The area : "+c.area()+ " The perimeter: "+ c.perimeter());
 
-// variable number of arguments ,the method treats it as an array and It is also called as Elipse
-     show();
-show(10);
-show(20);
-show(12,23,345,56,76,89,90);
 }
+}
+class circle
+{
+  private int radius;
+  
+public circle(int radius)
+{
+   this.radius =  radius;
+}
+public float area()
+{
+   return (float)(3.14* radius*radius);
+}
+public float perimeter()
+{
+  return (float)(2*3.14* radius);
+}
+
 }
 
 
 /*op:
-20
-56.6
-ravelli
+The area : 314.0 The perimeter: 62.8
 */
