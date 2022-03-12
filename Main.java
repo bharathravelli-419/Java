@@ -3,26 +3,26 @@ public class Main
   public static void main(String[] args)
 {
 
-  String Methods in JAVA
-Strings in JAVA are immutable
-
-    str.length()
-    str.toLowerCase()
-    str.toUpperCase()
-    str.trim().........removes Blank spaces
-    str.substring(int begin)
-    str.substring(int begin_index,int end_index)
-    str.replace(char old_char,char new_char)
-    str.startsWith(String s)
-    str.charAt(int index)
-    str.indexOf(String s)
-    str.lastIndexOf(String s)
-    str.equals(String s)
-    str.valueOf(int i)
- 
+int a[][];
+a = new int[3][];
+a[0] = new int[5];
+a[1] = new int[3];
+a[2] = new int[1];
+for(int i =0;i<a.length;i++)
+{
+     for(int j =0;j<a[i].length;j++)
+{
+  System.out.print(a[i][j]);
+}
+  System.out.println();
+}
 
   }
 
 }
 
-// op:ello
+/*op:
+00000
+000
+0
+*/
