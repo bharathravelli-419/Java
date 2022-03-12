@@ -1,26 +1,23 @@
 public class Main
 {
-public static int max(int x,int y)
-{
-  return x>y?x:y;
 
-}
-public static float max(float x,float y)
+public static void show(int... x)
 {
-   return x>y?x:y;
-}
-public static String max(String str1,String str2)
-{
-   return str1.length()>str2.length()?str1:str2;
-}
+  for(int a :x)
+    System.out.println(a);
+} 
   public static void main(String[] args)
 {
 
-    System.out.println(max(10,20));
-    System.out.println(max(2.4f,56.6f));
-    System.out.println(max("bharath","ravelli"));
+// variable number of arguments ,the method treats it as an array and It is also called as Elipse
+     show();
+show(10);
+show(20);
+show(12,23,345,56,76,89,90);
 }
 }
+
+
 /*op:
 20
 56.6
