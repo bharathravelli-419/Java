@@ -1,36 +1,28 @@
 public class Main
 {
-  public static  void update(int a[])
+public static int max(int x,int y)
 {
+  return x>y?x:y;
 
-a[0] = 234;
+}
+public static float max(float x,float y)
+{
+   return x>y?x:y;
+}
+public static String max(String str1,String str2)
+{
+   return str1.length()>str2.length()?str1:str2;
 }
   public static void main(String[] args)
 {
 
-
-  int a[]= {10,20,30,40};
-  System.out.println("before Calling the Method");
-  System.out.println();
-for(int x:a)
-{
-  System.out.print(x+" ");
-}
-System.out.println();
-  System.out.println("After Calling the method");
-  System.out.println();
-   update(a);
-for(int x:a)
-{
-   System.out.print(x + " ");
-}
-
+    System.out.println(max(10,20));
+    System.out.println(max(2.4f,56.6f));
+    System.out.println(max("bharath","ravelli"));
 }
 }
 /*op:
-before Calling the Method
-
-10 20 30 40
-After Calling the method
-234 20 30 40
+20
+56.6
+ravelli
 */
