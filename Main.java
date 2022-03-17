@@ -5,43 +5,31 @@ public class Main
 
 {
    outer o = new outer();
-   o.outerDisplay();
- // outer.inner  i = new outer().new inner();
-//outer$inner.class is created
+   o.display();
 }
 
 }
-
 class outer
 {
-  private int x=10;
-class inner
+
+void display()
 {
-   private int y = 20;
-void innerDisplay()
+     class inner
 {
-    System.out.println(x);
- System.out.println(y);
-}
-
-}
-
-void outerDisplay()
+    public void innerdisplay()
 {
-  inner i = new inner();
-i.innerDisplay();
- System.out.println(x);
-  System.out.println("y is not accessible");
+   System.out.println("hello Bharath");
 }
 
 }
+inner i = new inner();
+i.innerdisplay();
+}
 
-
+}
 /*
 
 op:
-10
-20
-10
-y is not accessible
+
+hello Bharath
 */
