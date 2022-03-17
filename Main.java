@@ -5,53 +5,60 @@ public class Main
 
   public static void main(String[] args)
 {
-
-    square s = new square(10);
-    System.out.println(s.area()+" " + s.perimeter());
     
+     superclass s = new subclass(20,30);
+       s.method1();
 }
 
 
 }
-
-class rectangle
+class superclass
 {
-private double length;
-private double breadth;
- public rectangle(double length,double breadth)
-{
-  this.length  = length; 
-  this.breadth = breadth; 
-}
-
-public double area()
-{
-    return length* breadth;
-}
-public double perimeter()
-{
- return 2*(length+breadth);
-}
-
-}
-
-class square extends rectangle
-{ 
-   private double length;
-  public square(double length)
+   private int ab;
+private int bc;
+  public superclass(int a,int b)
 
 {
-   super(length,length);
+  
+  this.ab = a;
+this.bc =b;
+
+}
+public void method1()
+{
+  System.out.println("this value of a is :"+ab);
+
+}
+
+
+}
+
+
+class subclass extends superclass
+{
+  private int a;
+private int b;
+   public subclass(int a ,int b)
+{
+   super(a,b);
+this.a = a;
+this.b = b;
+}
+public void method1()
+{
+  System.out.println("this value of a is :"+a);
+
 }
 
 
 
 }
+
 
 
 /*op:
 
-
+this value of a is :20
 
 
 
