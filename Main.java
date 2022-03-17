@@ -5,31 +5,38 @@ public class Main
 
 {
    outer o = new outer();
-   o.display();
+   o.meth();
 }
+
+}
+
+// Interface My can also be used Here 
+abstract class My
+{
+   abstract void display();
+
 
 }
 class outer
 {
 
-void display()
+public void meth()
 {
-     class inner
+  My m = new My()
 {
-    public void innerdisplay()
+   public void display()
 {
-   System.out.println("hello Bharath");
+  System.out.println("Hello Bharath");
 }
 
+};
+m.display();
 }
-inner i = new inner();
-i.innerdisplay();
 }
 
-}
 /*
 
 op:
 
-hello Bharath
+Hello Bharath
 */
